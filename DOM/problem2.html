@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick="getRandom()">Check</button>
+    <p id="op">you play the game</p>
+    <p id="score">Score : 10</p>
+
+
+    <script>
+                    let totalScore = 10;
+
+        function getRandom(){
+            let a = document.getElementById("input");
+            let value = Number(a.value);
+            let random = Math.random();
+            let b = Math.floor(random*10 +1);
+
+            
+            
+            if(b==value){
+               op.textContent = "you won the Game" ;
+               alert("You own")
+            }
+            else{
+                op.textContent = "try again";
+                totalScore = totalScore-1;
+                score.textContent = "score :" + totalScore;
+                
+            }
+
+            let c = i;
+            score.textContent = `your score is ${i}`;
+        }
+        
+    </script>
+</body>
+</html>

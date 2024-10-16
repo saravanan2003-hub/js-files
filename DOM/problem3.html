@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        saravanan
+    </div>
+    <button onclick="change()">change</button>
+
+    <style>
+        div{
+            background-color: aqua;
+            height: 200px;
+            width: 100px;
+            color:red;
+        }
+
+        .max{
+            width: 1000px;
+            transition: 10s;
+        }
+    </style>
+
+    <script>
+        let a = document.getElementById("box");
+        function change(){
+            a.style.backgroundColor = "yellow"
+            a.setAttribute("class", "max")
+        }
+    </script>
+</body>
+</html>

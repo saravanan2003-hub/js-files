@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <ul id="ul">
+            <li class="fruit">apple</li>
+            <li class="fruit">ornage</li>
+        </ul>
+        <button id="button" >ADD</button>
+        <button id="remove" >remove</button>
+        <button id="col">Change Color</button>
+    </div>
+
+<script>
+    const container = document.getElementById("container");
+    const ul = document.getElementById("ul");
+    const btn = document.getElementById("button");
+    const remove = document.getElementById("remove");
+
+    btn.addEventListener("click",() => {
+        
+    const newli = document.createElement("li");
+    newli.textContent = "Mango"
+    newli.classList.add("fruit");
+    ul.append(newli);
+        
+    });
+
+    
+    
+    remove.addEventListener("click",()=>{
+        const li = document.querySelectorAll("li");
+        if(li.length>0){
+            ul.removeChild(li[li.length-1]);
+        }
+    });
+
+    col.addEventListener("click", ()=>{
+        ul.style.color = "red"
+    })
+
+
+    
+
+
+
+</script>
+</body>
+
+</html>

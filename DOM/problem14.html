@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1 class="h1">
+            HELLO WORLD
+        </h1>
+        <button id="show">
+            show h1
+        </button>
+    </div>
+    <script>
+        const a = document.getElementsByClassName("h1");
+        const b = document.getElementById("show");
+        alert(a[0].textContent);
+
+        b.addEventListener("click", () =>{
+            alert(a[0].textContent);
+        });
+
+
+
+    </script>
+</body>
+</html>

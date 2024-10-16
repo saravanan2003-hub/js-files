@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Hello World</h1>
+  <p>This is the first paragraph.</p>
+  <div>
+    <p>
+      hi there....
+    </p>
+    <p>
+      hi thr 2....
+    </p>
+  </div>
+  <p>This is the second paragraph.</p>
+  <button class="showH1">Show H1 Content</button>
+  <button class="showH1">Show H2 Content</button>
+  <button id="changeText">Change Text</button>
+  <a href="">Click Me</a>
+
+
+  <script>
+    const a = document.querySelectorAll("p");
+    const button = document.getElementById("changeText");
+
+    button.addEventListener("click" , () =>{
+        a.forEach((para) =>{
+            console.log(para.textContent)
+        });
+    });
+
+
+    // Manipulating DOM content
+    button.addEventListener("click", showParaContent);
+    function showParaContent(){
+      //display only the 2nd para content using the index when iterating....
+      paragraphs.forEach(
+      console.log(a[1].textContent));
+    }
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

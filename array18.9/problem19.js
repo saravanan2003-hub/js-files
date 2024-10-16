@@ -12,7 +12,7 @@ console.log(array);
 let temp = 0;
 let mul = 1;
 let sum = 0;
-let str1 = "";
+let str1 = " ";
 let str2 = "";
 
 for(i=0; i<array.length; i++)

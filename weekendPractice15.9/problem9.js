@@ -1,12 +1,15 @@
 let intervals = 1;
 let altitude = 100;
 let count = 10;
-for(i=1;i<=count;i++)
+let flightHeight = 1;
+for(i=intervals;i<=count;i++)
 {
-    let flightHeight = altitude * intervals;
+    flightHeight = altitude * intervals;
+    console.log(` in first ${i} flight fly in${flightHeight}feet`);
     intervals++;
-    console.log(`flight fly in${flightHeight}feet`);
+    
 }
+
 
 
 

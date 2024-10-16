@@ -15,17 +15,18 @@
 // console.log(digits); // Output: [1, 3, 5, 0]
 
 
-let number = "13509";
+let number = 13509;
 
 let str = number.toString()
-console.log(str)
+// console.log(str)
 
 let spl = str.split('')
-console.log(spl);
+// console.log(spl);
 
 let temp = 0;
 
 let map = spl.map(Number)
+// console.log(map)
 for(i=0; i<map.length;i++)
 {
    temp = map[i] + temp;

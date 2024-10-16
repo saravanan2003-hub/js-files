@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="p(event)">Saravanan</button>
+    <button onclick="p(event)">Bala</button>
+    <button onclick="p(event)">Harish</button>
+
+    <h1 id="text">Enter your Name</h1>
+
+<script>
+    function p(event){
+    let a = document.getElementById("text");
+    let b = event.target.textContent;
+
+    a.textContent = b;
+    a.style.color = "orange";
+    }
+</script>
+
+</body>
+</html>

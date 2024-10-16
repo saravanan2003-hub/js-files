@@ -11,16 +11,16 @@ switch(day)
         console.log("this is wednesday");
         break;
     case 4:
-        console.log("this is wednesday");
-        break;
-    case 5:
         console.log("this is thursday");
         break;
-    case 6:
+    case 5:
         console.log("this is friday");
         break;
-    case 7:
+    case 6:
         console.log("this is saturday");
+        break;
+    case 7:
+        console.log("this is sunday");
         break;
     default:
         console.log("invalid day");

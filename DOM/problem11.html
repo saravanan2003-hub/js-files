@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <button onclick="add()">add</button>
+    <ul id="ul">
+        <li>hello
+            <button onclick="Delete(event)">Delete</button>
+        </li>
+    </ul>
+
+
+    <script>
+        function add(){
+            let a = document.getElementById("ul");
+            let b = document.getElementById("text");
+            let c = b.value;
+            let button = document.createElement("button","Delete");
+            button.setAttribute("onclick", "Delete(event)");
+            button.textContent = "Delete"
+            let d = document.createElement("li");
+            d.textContent = c;
+            a.append(d);
+            d.append(button)
+        }
+
+        function Delete(event){
+            event.target.parentElement.remove();
+        }
+    </script>
+</body>
+</html>

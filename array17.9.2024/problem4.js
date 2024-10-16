@@ -2,4 +2,4 @@
 
 let array = ["print","the","array"];
 array[2] = "modified";
-console.log(array[2]);
+console.log(array);

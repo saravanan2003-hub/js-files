@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text">color</h1>
+    <button id="red" onclick="color(event)">red</button>
+    <button id="green" onclick="color(event)">green</button>
+    <button id="blue" onclick="color(event)">blue</button>
+ 
+
+   
+
+    <script>
+        function color(event){
+            let a = document.getElementById("text");
+            let b = event.target.textContent;
+
+            a.textContent = b;
+            a.style.color = b;
+        }
+    </script>
+
+</body>
+</html>
