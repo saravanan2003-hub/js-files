@@ -26,5 +26,5 @@ for(i=0; i<array.length; i++){
     thirdLargest = array[i];
     }
 }
-console.log(thirdLargest);
+console.log(secondLargest);
 
