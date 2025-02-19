@@ -1,7 +1,6 @@
 // Matrix Addition using 2d Integer array
 
-let a = [[1, 2],
-        [3, 4]];
+let a = [[1, 2],[3, 4]];
 
 let b = [[3, 4],
         [1, 2]];

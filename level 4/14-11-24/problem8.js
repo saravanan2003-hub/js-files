@@ -30,3 +30,5 @@ if (result !== -1) {
 } else {
     console.log("Element not found in the array");
 }
+
+

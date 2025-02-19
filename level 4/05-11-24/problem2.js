@@ -1,9 +1,6 @@
 // In an array of string, return all the string which start with the letter 'a' (Case insensitive) 
 // for eg arr = ["apple", "Ali", "mango","Brush"] it should print apple, Ali
 
-
-
-
 function includeA(array){
     let arr = []
     for(i=0; i<array.length; i++){

@@ -1,6 +1,5 @@
 let array = [70, 48, 30, 56, 78, 100, 3,78, 23,6];
 let swapped;
-
 do{
     swapped = false
     for(i=0;i<array.length; i++){
