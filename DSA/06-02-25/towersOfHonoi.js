@@ -9,4 +9,4 @@ function towersOfHonoi(di,s,t,d){
     }
 }
 
-towersOfHonoi(20, 1, 2, 3);
+towersOfHonoi(10, 1, 2, 3);
